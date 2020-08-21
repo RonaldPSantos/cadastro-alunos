@@ -75,7 +75,7 @@ class StudentsController extends Controller
             $student->courses()->sync($courses);
         }
 
-        flash('Produto criado com sucesso')->success();
+        flash('Aluno cadastrado com sucesso')->success();
         return view('admin.students.index');
     }
 
@@ -130,7 +130,8 @@ class StudentsController extends Controller
             $data['photo'] = $photo->store('students', 'public');
         }
         $student->update($data);
-        flash('Produto alterado com sucesso!')->success();
+        
+        flash('Aluno alterado com sucesso!')->success();
         return redirect()->route('admin.students.index');
     }
 
