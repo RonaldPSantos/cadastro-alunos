@@ -10,7 +10,7 @@
         <input type="hidden" name="_method" value="PUT">
         <div class="form-group">
             <label for="name">Código</label>
-            <input type="text" name="name" id="name" class="form-control" value="{{ $student->code }}">
+            <input type="text" name="code" id="code" class="form-control" value="{{ $student->code }}">
         </div>
         <div class="form-group">
             <label for="name">Nome</label>
