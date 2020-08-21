@@ -27,6 +27,7 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware(['can:man
     Route::resource('/users', 'UsersController', ['except' => ['show', 'create', 'store']]);
     Route::resource('students', 'StudentsController');
     Route::resource('courses', 'CoursesController');
+    Route::resource('coursesImport', 'CoursesImportController');
     Route::post('photo/remove', 'PhotoController@removePhoto')->name('photo.remove');
            
 });

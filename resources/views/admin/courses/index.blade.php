@@ -3,6 +3,7 @@
 @section('content')
     <hr>
     <a class="btn btn-primary" href="{{ route('admin.courses.create') }}">{{ _('CADASTRAR') }}</a>
+    <a class="btn btn-secondary" href="{{ route('admin.coursesImport.create') }}">{{ _('IMPORTAR') }}</a>
     <hr>
     <table class="data-table cell-border compact stripe hover">
         <thead>
